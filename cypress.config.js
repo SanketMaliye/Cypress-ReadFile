@@ -19,6 +19,7 @@ async function loadAndExtractText(pdfUrl) {
 
 module.exports = defineConfig({
   e2e: {
+    trashAssetsBeforeRuns : false,
     setupNodeEvents(on, config) {
       on('task', { downloadFile });
       on('task', verifyDownloadTasks);
