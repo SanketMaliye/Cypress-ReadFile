@@ -18,9 +18,11 @@ async function loadAndExtractText(pdfUrl) {
 }
 
 module.exports = defineConfig({
+  reporter: 'cypress-mochawesome-reporter',
   e2e: {
     trashAssetsBeforeRuns : false,
     setupNodeEvents(on, config) {
+      require('cypress-mochawesome-reporter/plugin')(on);
       on('task', { downloadFile });
       on('task', verifyDownloadTasks);
       on('task', {

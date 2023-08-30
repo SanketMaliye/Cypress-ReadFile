@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cy:run": "cypress run",  
-    "cy:parallel" : "cypress-parallel -s cy:run -t 2 -d cypress/e2e/"
+    "cy:run": "cypress run",
+    "cy:parallel": "cypress-parallel -s cy:run -t 2 -d cypress/e2e/"
   },
   "keywords": [],
   "author": "QA Sanket Maliye",
@@ -18,6 +18,7 @@
   },
   "devDependencies": {
     "cy-verify-downloads": "^0.1.15",
-    "cypress-downloadfile": "^1.2.3"
+    "cypress-downloadfile": "^1.2.3",
+    "cypress-mochawesome-reporter": "^3.5.1"
   }
 }
